@@ -1,5 +1,6 @@
 import TransactionItem from "./TransactionItem";
 import './TransactionHistory.css';
+import propTypes from 'prop-types'
 
 export default function TransactionHistory({items}) {
   return (
@@ -24,4 +25,10 @@ export default function TransactionHistory({items}) {
       </tbody>
 </table>
   )
+}
+
+TransactionItem.propTypes = {
+  type: propTypes.string,
+  amount: propTypes.string,
+  currency: propTypes.string,
 }

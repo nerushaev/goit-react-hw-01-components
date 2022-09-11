@@ -1,4 +1,5 @@
 import './Profile.css'
+import propTypes from 'prop-types'
 
 export default function Profile(props) {
   return(
@@ -28,4 +29,16 @@ export default function Profile(props) {
       </li>
     </ul>
   </div>
-  )};
+  )
+};
+  
+Profile.propTypes = {
+  userName: propTypes.string,
+  userImg: propTypes.string,
+  userTag: propTypes.string,
+  userLocation: propTypes.string,
+  userLikes: propTypes.number,
+  userViews: propTypes.number,
+  userFollowers: propTypes.number,
+
+}

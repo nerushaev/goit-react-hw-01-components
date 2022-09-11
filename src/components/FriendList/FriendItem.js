@@ -1,4 +1,5 @@
 import './Friends.css'
+import propTypes from 'prop-types'
 
 export default function FriendItem({ isOnline, userAvatar, userName }) {
   return (
@@ -9,3 +10,9 @@ export default function FriendItem({ isOnline, userAvatar, userName }) {
 </div> 
   )
 };
+
+FriendItem.propTypes = {
+  isOnline: propTypes.bool,
+  userAvatar: propTypes.string,
+  userName: propTypes.string,
+}

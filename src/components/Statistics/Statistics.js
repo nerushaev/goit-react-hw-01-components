@@ -1,4 +1,5 @@
 import './Statistics.css';
+import propTypes from 'prop-types'
 
 export default function Statisics({ title, stats, color }) {
   return (
@@ -29,5 +30,11 @@ export default function Statisics({ title, stats, color }) {
     `}</style> */}
 </section>
   )
+}
+
+Statisics.propTypes = {
+  title: propTypes.string,
+  label: propTypes.string,
+  percentage: propTypes.number,
 }
 

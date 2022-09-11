@@ -1,5 +1,6 @@
 import FriendItem from "./FriendItem"
 import './Friends.css'
+import propTypes from 'prop-types';
 
 
 export default function FriendList({friends}) {
@@ -17,4 +18,8 @@ export default function FriendList({friends}) {
       ))}
     </ul>
   )
+}
+
+FriendList.propTypes = {
+  friends: propTypes.array.isRequired,
 }
